@@ -69,6 +69,7 @@ ul a {
 ul a:first-child:hover {
   border-radius: 33%;
 }
+*/
 
 /* ============ nav========================= */
 
@@ -76,23 +77,80 @@ ul a:first-child:hover {
   display: none;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 65px;
-  margin-bottom: 20px;
+.nav {
+  height: 70px;
   background-color: #363b64;
+  text-align: center;
 }
-.chatrs {
-  width: 80%;
+.nav-svg {
+  margin: 15px 7%;
 }
+
 /* =============== .chatrs=================== */
+
 canvas {
-  width: 90vh;
   padding-bottom: 40px;
   border-bottom: solid 2px black;
 }
-main {
-  margin: 0 5vw;
+
+/* =============================== */
+.grid {
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+/* ========== grid areas ============= */
+
+header {
+  grid-area: header;
+}
+.dashboard {
+  grid-area: dashboard;
+}
+.alert {
+  grid-area: alert;
+}
+nav {
+  grid-area: nav;
+}
+.traffic {
+  grid-area: traffic;
+}
+.daily-traffic {
+  grid-area: daily;
+}
+.user {
+  grid-area: user;
+}
+.main-content {
+  grid-area: main;
+}
+
+/* ================= media ========== */
+/* ================================================= */
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 70px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main";
+  }
+  .grid2 {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas:
+      "traffic traffic"
+      "daily user";
+  }
+  .nav {
+    height: 100%;
+  }
 }

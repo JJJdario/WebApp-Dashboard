@@ -1,4 +1,4 @@
-const trafficChart = document.getElementById("myChart");
+const trafficChart = document.getElementById("traffic-chart");
 let myChart = new Chart(trafficChart, {
   type: "line",
   data: {
@@ -41,7 +41,7 @@ let myChart = new Chart(trafficChart, {
 
 // ============================ Daily Traffic chart =====================
 
-const dailyTraffic = document.getElementById("dailyTraffic");
+const dailyTraffic = document.getElementById("daily-traffic");
 const pie = new Chart(dailyTraffic, {
   type: "bar",
   data: {
@@ -67,7 +67,7 @@ const pie = new Chart(dailyTraffic, {
 
 //========================== Movile User Chart ======================
 
-const movileUser = document.getElementById("movileUser");
+const movileUser = document.getElementById("movile-user");
 let bar = new Chart(movileUser, {
   type: "doughnut",
   data: {

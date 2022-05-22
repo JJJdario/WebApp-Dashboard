@@ -18,14 +18,17 @@ let myChart = new Chart(trafficChart, {
 
     datasets: [
       {
-        data: [650, 1350, 1000, 2000, 1600, 1850, 1350, 1750, 2250, 1500, 2550],
-        backgroundColor: ["rgba(102, 109, 172, 0.3)"],
+        data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
+        backgroundColor: ["rgba(116, 119, 191, 0.3)"],
         fill: true,
       },
     ],
   },
   options: {
-    aspectRatio: 1.5,
+    aspectRatio: 2.5,
+    animation: {
+      duration: 0,
+    },
     plugins: {
       legend: {
         display: false,
@@ -49,8 +52,10 @@ const pie = new Chart(dailyTraffic, {
 
     datasets: [
       {
-        data: ["60", "120", "185", "130", "225", "200", "100"],
-        backgroundColor: ["rgb(102, 109, 172)"],
+        label: "# of Hits",
+        data: [75, 115, 175, 125, 225, 200, 100],
+        backgroundColor: ["#7477BF"],
+        borderWidth: 0,
         fill: true,
       },
     ],
@@ -76,11 +81,8 @@ let bar = new Chart(movileUser, {
     datasets: [
       {
         data: ["70", "15", "15"],
-        backgroundColor: [
-          "rgb(102, 109, 172)",
-          "rgb(50, 157, 121)",
-          "rgb(31, 133, 151)",
-        ],
+        borderWidth: 0,
+        backgroundColor: ["#7477BF", "#78CF82", "#51B6C8"],
         fill: true,
       },
     ],

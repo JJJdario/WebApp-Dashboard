@@ -12,3 +12,12 @@
   height: 40px;
   fill: white;
 }
+.social-image {
+  width: 40px;
+  height: 40px;
+}
+.fb-logo,
+.tw-logo,
+.inst-logo {
+  fill: white;
+}

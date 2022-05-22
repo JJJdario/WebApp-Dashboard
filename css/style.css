@@ -5,7 +5,7 @@ body {
 }
 
 h1,
-h3 {
+header h3 {
   color: white;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -24,7 +24,7 @@ h2 {
   height: 4.3rem;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(102, 109, 172);
+  background-color: #7477bf;
 }
 .notifications {
   display: none;
@@ -93,6 +93,122 @@ canvas {
   border-bottom: solid 2px black;
 }
 
+/* ================ social ================ */
+.social-image {
+  height: 100px;
+  width: 100px;
+  background-color: #7477bf;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px 20px;
+}
+.social-text {
+  text-align: left;
+  margin: auto 0;
+}
+.fb,
+.tw,
+.inst {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 30px;
+  border: solid 1px grey;
+  border-radius: 3%;
+}
+.data {
+  font-size: 50px;
+  margin: 0 10px 0 0;
+}
+.social-heading {
+  color: #7477bf;
+  font-size: 23px;
+  margin: 0;
+}
+.social-grid h3,
+.members h3,
+form h3,
+.settings h3 {
+  color: black;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 27px;
+  letter-spacing: 1.5px;
+}
+.social-grid {
+  border-bottom: solid 1px black;
+}
+/* ============= members ================= */
+.members-div {
+  text-align: center;
+  border-bottom: solid 1px rgba(182, 178, 178, 0.482);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.members img {
+  border-radius: 50%;
+  width: 80px;
+}
+.members p {
+  margin: 0;
+}
+
+/* =================== form ============= */
+
+form,
+select {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  width: 80vw;
+  margin: 0 auto;
+  border-color: rgb(218, 211, 211);
+  border-radius: 8px;
+  font-size: 20px;
+}
+input {
+  height: 70px;
+  margin-bottom: 20px;
+}
+textarea {
+  height: 200px;
+}
+::placeholder {
+  padding: 10px 10px;
+}
+button {
+  margin: 20px auto;
+  width: 80vw;
+  height: 70px;
+  background-color: #7477bf;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+
+.form-field {
+}
+#timezone {
+  height: 70px;
+  width: 80vw;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.button-disbled {
+  margin-left: 20px;
+  background-color: darkgrey;
+}
+.button-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 80vw;
+}
+
 /* =============================== */
 .grid {
   display: grid;
@@ -102,7 +218,13 @@ canvas {
   grid-template-areas:
     "header"
     "nav"
-    "main";
+    "grid2"
+    "social-grid"
+    "members"
+    "activity"
+    "message"
+    "settings"
+    "form-field";
 }
 
 /* ========== grid areas ============= */
@@ -131,6 +253,39 @@ nav {
 .main-content {
   grid-area: main;
 }
+.social-grid {
+  grid-area: social-grid;
+}
+.members {
+  grid-area: members;
+}
+.message {
+  grid-area: message;
+}
+.activity {
+  grid-area: activity;
+}
+.settings {
+  grid-area: settings;
+}
+.form-field {
+  grid-area: form-field;
+}
+.grid2 {
+  grid-area: grid2;
+}
+.fb {
+  grid-area: fb;
+}
+.inst {
+  grid-area: inst;
+}
+.tw {
+  grid-area: tw;
+}
+.s-h3 {
+  grid-area: s-h3;
+}
 
 /* ================= media ========== */
 /* ================================================= */
@@ -140,7 +295,14 @@ nav {
     grid-template-columns: 70px 1fr;
     grid-template-areas:
       "header header"
-      "nav main";
+      "nav dashboard"
+      "nav grid2"
+      "nav social-grid"
+      "nav members"
+      "nav activity"
+      "nav message"
+      "nav settings"
+      "nav form-field";
   }
   .grid2 {
     display: grid;
@@ -152,5 +314,19 @@ nav {
   }
   .nav {
     height: 100%;
+  }
+  .s-mid {
+    display: flex;
+  }
+  .fb,
+  .inst,
+  .tw {
+    margin: 10px;
+  }
+  .fb {
+    margin-left: 30px;
+  }
+  .social-grid {
+    width: 1fr;
   }
 }

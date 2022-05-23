@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+/* =========== line chart links ============= */
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 10px 5vw;
+}
+li {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+ul a:first-child:hover {
+  border-radius: 33%;
+}
+/* =============== .chatrs=================== */
+
+canvas {
+  padding-bottom: 40px;
+  border-bottom: solid 2px black;
+}
+
+/* ================ social ================ */
+
+.fb,
+.tw,
+.inst {
+  display: flex;
+  justify-content: flex-start;
+  border: solid 1px grey;
+  border-radius: 3%;
+  margin-bottom: 20px;
+}
+
+// /* ============= members ================= */
+.members-div,
+.recent-div {
+  text-align: center;
+  border-bottom: solid 1px rgba(182, 178, 178, 0.482);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 165px;
+}

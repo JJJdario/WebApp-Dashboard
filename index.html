@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Mukta&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/svg.css" />
 
     <title>Dashboard</title>
@@ -102,7 +102,6 @@
         <h2 class="headline">Dashboard</h2>
         <div class="tab"></div>
       </div>
-
       <div class="alert" id="alert"></div>
 
       <div class="grid2">
@@ -149,7 +148,7 @@
         </div>
       </div>
 
-      <!-- ======================================================= -->
+      <!-- ================  social ============================= -->
       <div class="social-grid">
         <div class="s-h3">
           <h3>SOCIAL STATS</h3>
@@ -211,110 +210,152 @@
         </div>
       </div>
       <!-- ======================= MEMBERS ================== -->
-      <div class="members">
-        <h3>NEW MEMBERS</h3>
-        <div class="members-div">
-          <img src="images/member-1.jpg" alt="" />
-          <div class="m-labels">
-            <p>Victoria Chambers</p>
-            <a href="#">victoria.chambers80@example.com</a>
-            <p>10/15/20</p>
+      <div class="grid3">
+        <div class="members">
+          <div>
+            <h3>NEW MEMBERS</h3>
+          </div>
+          <div class="members-div">
+            <div class="memb-c">
+              <div>
+                <img src="images/member-1.jpg" alt="" />
+              </div>
+              <div class="m-labels">
+                <p>Victoria Chambers</p>
+                <a href="#">victoria.chambers80@example.com</a>
+              </div>
+            </div>
+            <p class="date">10/15/20</p>
+          </div>
+          <div class="members-div">
+            <div class="memb-c">
+              <div>
+                <img src="images/member-2.jpg" alt="" />
+              </div>
+              <div>
+                <p>Dale Byrd</p>
+                <a href="#">dale.byrd52@example.com</a>
+              </div>
+            </div>
+            <p class="date">10/15/20</p>
+          </div>
+
+          <div class="members-div">
+            <div class="memb-c">
+              <div>
+                <img src="images/member-3.jpg" alt="" />
+              </div>
+
+              <div>
+                <p>Down Wood</p>
+                <a href="#">dawn.wood16@example.com</a>
+              </div>
+            </div>
+            <p class="date">10/15/20</p>
+          </div>
+          <div class="members-div">
+            <div class="memb-c">
+              <div>
+                <img src="images/member-4.jpg" alt="" />
+              </div>
+
+              <div>
+                <p>Dan Oliver</p>
+                <a href="#">dan.oliver82@example.com</a>
+              </div>
+            </div>
+            <p class="date">10/15/20</p>
           </div>
         </div>
-        <div class="members-div">
-          <img src="images/member-2.jpg" alt="" />
+        <div class="recent">
+          <!-- ========================= recent================= -->
           <div>
-            <p>Dale Byrd</p>
-            <a href="#">dale.byrd52@example.com</a>
-            <p>10/15/20</p>
+            <h3>RECENT ACTIVITY</h3>
           </div>
-        </div>
-        <div class="members-div">
-          <img src="images/member-3.jpg" alt="" />
-          <div>
-            <p>Down Wood</p>
-            <a href="#">dawn.wood16@example.com</a>
-            <p>10/15/20</p>
+          <div class="members-div">
+            <img src="images/member-1.jpg" alt="" />
+            <div>
+              <p>Victoria Chambers</p>
+              <p></p>
+              <p>10/15/20</p>
+            </div>
           </div>
-        </div>
-        <div class="members-div">
-          <img src="images/member-4.jpg" alt="" />
-          <div>
+          <div class="members-div">
+            <img src="images/member-2.jpg" alt="" />
+            <div>
+              <p>Dale Byrd</p>
+              <p></p>
+              <p>10/15/20</p>
+            </div>
+          </div>
+          <div class="members-div">
+            <img src="images/member-3.jpg" alt="" />
+            <div>
+              <p>Down Wood</p>
+              <p></p>
+              <p>10/15/20</p>
+            </div>
+          </div>
+          <div class="members-div">
+            <div>
+              <img src="images/member-4.jpg" alt="" />
+            </div>
+
             <p>Dan Oliver</p>
-            <a href="#">dan.oliver82@example.com</a>
-            <p>10/15/20</p>
-          </div>
-        </div>
-        <!-- ========================= recent================= -->
-        <h3>RECENT ACTIVITY</h3>
-        <div class="members-div">
-          <img src="images/member-1.jpg" alt="" />
-          <div>
-            <p>Victoria Chambers</p>
             <p></p>
             <p>10/15/20</p>
           </div>
         </div>
-        <div class="members-div">
-          <img src="images/member-2.jpg" alt="" />
-          <div>
-            <p>Dale Byrd</p>
-            <p></p>
-            <p>10/15/20</p>
+        <!-- ===================== MENSAGE USER =============== -->
+
+        <form>
+          <div class="message">
+            <div>
+              <h3>MESSAGE USER</h3>
+            </div>
+            <input
+              id="userField"
+              class="form-field"
+              type="text"
+              placeholder="Search for user"
+              name="search"
+              id="search"
+            />
+            <textarea
+              class="form-area"
+              id="messageField"
+              placeholder="Message for user"
+              name="text-area"
+              id="text-area"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="button-primary" id="send">SEND</button>
           </div>
-        </div>
-        <div class="members-div">
-          <img src="images/member-3.jpg" alt="" />
-          <div>
-            <p>Down Wood</p>
-            <p></p>
-            <p>10/15/20</p>
+        </form>
+        <form>
+          <div class="settings">
+            <div>
+              <h3>SETTINGS</h3>
+              <div>
+                <p>Send Email Nptification</p>
+              </div>
+              <div>
+                <p>Set Profile Public</p>
+              </div>
+            </div>
+
+            <select class="form-field" id="timezone">
+              <option disabled selected>Select Timezone</option>
+              <option>Eastern</option>
+            </select>
+            <div class="button-container">
+              <button class="button-primary" id="save">Save</button>
+              <button class="button-disbled" id="cancel">Cancel</button>
+            </div>
           </div>
-        </div>
-        <div class="members-div">
-          <img src="images/member-4.jpg" alt="" />
-          <div>
-            <p>Dan Oliver</p>
-            <p></p>
-            <p>10/15/20</p>
-          </div>
-        </div>
+        </form>
       </div>
-
-      <!-- ===================== MENSAGE USER =============== -->
-
-      <form class="message">
-        <h3>MESSAGE USER</h3>
-        <input
-          type="text"
-          placeholder="Search for user"
-          name="search"
-          id="search"
-        />
-        <textarea
-          placeholder="Message for user"
-          name="text-area"
-          id="text-area"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button class="button-primary" id="send">SEND</button>
-
-        <section class="settings">
-          <h3>SETTINGS</h3>
-          <!-- =========== -->
-          <!-- ===============? -->
-        </section>
-
-        <select class="form-field" id="timezone">
-          <option disabled selected>Select Timezone</option>
-          <option>Eastern</option>
-        </select>
-        <div class="button-container">
-          <button class="button-primary" id="save">Save</button>
-          <button class="button-disbled" id="cancel">Cancel</button>
-        </div>
-      </form>
     </main>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js"

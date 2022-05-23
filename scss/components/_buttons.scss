@@ -1,0 +1,22 @@
+button {
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+  height: 70px;
+  background-color: #7477bf;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+.button-disbled {
+  margin-left: 20px;
+  background-color: darkgrey;
+}
+.button-container {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 90%;
+}

@@ -1,0 +1,191 @@
+.grid {
+  display: grid;
+
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "dashboard"
+    "alert"
+    "grid2"
+    "social-grid"
+    "grid3";
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "members"
+    "recent"
+    "message"
+    "settings";
+}
+.s-mid {
+  margin: 10px;
+}
+.message {
+  text-align: center;
+}
+.social-grid {
+  border-bottom: solid 1px black;
+}
+// /* ========== grid areas ============= */
+
+header {
+  grid-area: header;
+}
+.dashboard {
+  grid-area: dashboard;
+}
+.alert {
+  grid-area: alert;
+}
+nav {
+  grid-area: nav;
+}
+.traffic {
+  grid-area: traffic;
+}
+.daily-traffic {
+  grid-area: daily;
+}
+.user {
+  grid-area: user;
+}
+.main-content {
+  grid-area: main;
+}
+.social-grid {
+  grid-area: social-grid;
+}
+.members {
+  grid-area: members;
+}
+.message {
+  grid-area: message;
+}
+
+.form-field {
+  grid-area: form-field;
+}
+.grid2 {
+  grid-area: grid2;
+}
+.grid3 {
+  grid-area: grid3;
+}
+.fb {
+  grid-area: fb;
+}
+.inst {
+  grid-area: inst;
+}
+.tw {
+  grid-area: tw;
+}
+.s-h3 {
+  grid-area: s-h3;
+}
+.recent {
+  grid-area: recent;
+}
+.settings {
+  grid-area: settings;
+}
+
+// /* ================= media ========== */
+// /* ================================================= */
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 8% 92%;
+    grid-template-areas:
+      "header header"
+      "nav dashboard"
+      "nav alert"
+      "nav grid2"
+      "nav social-grid"
+      "nav grid3";
+  }
+  .grid2 {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "traffic traffic"
+      "daily user";
+  }
+  .members-div,
+  .memb-c {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 83px;
+  }
+  .memb-c {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+  .date,
+  img {
+    margin-right: 40px;
+  }
+
+  .nav {
+    height: 100%;
+    max-width: 70px;
+  }
+
+  .members,
+  .recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    justify-content: flex-start;
+  }
+
+  .s-mid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "fb inst tw";
+
+    grid-gap: 10px;
+  }
+  fb {
+    margin-left: 10px;
+  }
+  .data {
+    font-size: 1.6em;
+  }
+  .social-heading {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid3 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "members recent"
+      "message settings";
+  }
+  .data {
+    font-size: 3em;
+  }
+  .social-heading {
+    font-size: 2em;
+  }
+
+  .members,
+  .recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    border-right: solid 2px rgb(168, 166, 166);
+    padding-right: 20px;
+  }
+}

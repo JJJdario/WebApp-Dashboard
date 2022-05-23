@@ -1,0 +1,501 @@
+/* line 1, ../../../WebApp Dashboard/scss/base/_base.scss */
+body {
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+/* =========== line chart links ============= */
+/* line 8, ../../../WebApp Dashboard/scss/base/_base.scss */
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 10px 5vw;
+}
+
+/* line 14, ../../../WebApp Dashboard/scss/base/_base.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 18, ../../../WebApp Dashboard/scss/base/_base.scss */
+ul a {
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+/* line 23, ../../../WebApp Dashboard/scss/base/_base.scss */
+ul a:first-child:hover {
+  border-radius: 33%;
+}
+
+/* =============== .chatrs=================== */
+/* line 28, ../../../WebApp Dashboard/scss/base/_base.scss */
+canvas {
+  padding-bottom: 40px;
+  border-bottom: solid 2px black;
+}
+
+/* ================ social ================ */
+/* line 35, ../../../WebApp Dashboard/scss/base/_base.scss */
+.fb,
+.tw,
+.inst {
+  display: flex;
+  justify-content: flex-start;
+  border: solid 1px grey;
+  border-radius: 3%;
+  margin-bottom: 20px;
+}
+
+/* line 46, ../../../WebApp Dashboard/scss/base/_base.scss */
+.members-div,
+.recent-div {
+  text-align: center;
+  border-bottom: solid 1px rgba(182, 178, 178, 0.482);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 165px;
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/base/_typography.scss */
+h1,
+header h3 {
+  color: white;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: auto;
+}
+
+/* line 8, ../../../WebApp Dashboard/scss/base/_typography.scss */
+h2 {
+  margin-left: 0.3rem;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  color: #504f4f;
+}
+
+/* line 17, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.heading {
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #7477bf;
+}
+
+/* line 23, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.heading h1 {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+/* line 29, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.heading h3 {
+  margin-right: 20px;
+  margin-left: 0;
+  font-size: 0.7rem;
+}
+
+/* line 36, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.social-text {
+  text-align: left;
+  margin: auto 0;
+}
+
+/* line 40, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.data {
+  font-size: 50px;
+  margin: 0 10px 0 0;
+}
+
+/* line 44, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.social-heading {
+  color: #7477bf;
+  font-size: 2em;
+  margin: 0;
+}
+
+/* line 49, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.social-grid h3,
+.members h3,
+.recent h3,
+form h3,
+.settings h3 {
+  color: black;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 27px;
+  letter-spacing: 1.5px;
+}
+
+/* line 60, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.members p,
+.recent p {
+  margin: 0;
+}
+
+/* line 65, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.message h3 {
+  margin-left: 27px;
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+button {
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
+  height: 70px;
+  background-color: #7477bf;
+  border-style: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+}
+
+/* line 12, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+.button-disbled {
+  margin-left: 20px;
+  background-color: darkgrey;
+}
+
+/* line 16, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+.button-container {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 90%;
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/components/_forms.scss */
+form,
+select {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 6, ../../../WebApp Dashboard/scss/components/_forms.scss */
+input,
+textarea {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  border-color: #dad3d3;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+/* line 15, ../../../WebApp Dashboard/scss/components/_forms.scss */
+input {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+/* line 19, ../../../WebApp Dashboard/scss/components/_forms.scss */
+textarea {
+  height: 200px;
+}
+
+/* line 22, ../../../WebApp Dashboard/scss/components/_forms.scss */
+::placeholder {
+  padding: 10px 10px;
+}
+
+/* line 26, ../../../WebApp Dashboard/scss/components/_forms.scss */
+#timezone {
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "dashboard" "alert" "grid2" "social-grid" "grid3";
+}
+
+/* line 15, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.grid3 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "members" "recent" "message" "settings";
+}
+
+/* line 25, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.s-mid {
+  margin: 10px;
+}
+
+/* line 28, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.message {
+  text-align: center;
+}
+
+/* line 31, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.social-grid {
+  border-bottom: solid 1px black;
+}
+
+/* line 36, ../../../WebApp Dashboard/scss/components/_grid.scss */
+header {
+  grid-area: header;
+}
+
+/* line 39, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.dashboard {
+  grid-area: dashboard;
+}
+
+/* line 42, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.alert {
+  grid-area: alert;
+}
+
+/* line 45, ../../../WebApp Dashboard/scss/components/_grid.scss */
+nav {
+  grid-area: nav;
+}
+
+/* line 48, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.traffic {
+  grid-area: traffic;
+}
+
+/* line 51, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.daily-traffic {
+  grid-area: daily;
+}
+
+/* line 54, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.user {
+  grid-area: user;
+}
+
+/* line 57, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.main-content {
+  grid-area: main;
+}
+
+/* line 60, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.social-grid {
+  grid-area: social-grid;
+}
+
+/* line 63, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.members {
+  grid-area: members;
+}
+
+/* line 66, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.message {
+  grid-area: message;
+}
+
+/* line 70, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.form-field {
+  grid-area: form-field;
+}
+
+/* line 73, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.grid2 {
+  grid-area: grid2;
+}
+
+/* line 76, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.grid3 {
+  grid-area: grid3;
+}
+
+/* line 79, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.fb {
+  grid-area: fb;
+}
+
+/* line 82, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.inst {
+  grid-area: inst;
+}
+
+/* line 85, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.tw {
+  grid-area: tw;
+}
+
+/* line 88, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.s-h3 {
+  grid-area: s-h3;
+}
+
+/* line 91, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.recent {
+  grid-area: recent;
+}
+
+/* line 94, ../../../WebApp Dashboard/scss/components/_grid.scss */
+.settings {
+  grid-area: settings;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 102, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .grid {
+    grid-template-columns: 8% 92%;
+    grid-template-areas: "header header" "nav dashboard" "nav alert" "nav grid2" "nav social-grid" "nav grid3";
+  }
+  /* line 112, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .grid2 {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "traffic traffic" "daily user";
+  }
+  /* line 120, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .members-div,
+  .memb-c {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 83px;
+  }
+  /* line 127, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .memb-c {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+  /* line 131, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .date,
+  img {
+    margin-right: 40px;
+  }
+  /* line 136, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .nav {
+    height: 100%;
+    max-width: 70px;
+  }
+  /* line 141, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .members,
+  .recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    justify-content: flex-start;
+  }
+  /* line 150, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .s-mid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "fb inst tw";
+    grid-gap: 10px;
+  }
+  /* line 157, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  fb {
+    margin-left: 10px;
+  }
+  /* line 160, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .data {
+    font-size: 1.6em;
+  }
+  /* line 163, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .social-heading {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 169, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .grid3 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "members recent" "message settings";
+  }
+  /* line 175, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .data {
+    font-size: 3em;
+  }
+  /* line 178, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .social-heading {
+    font-size: 2em;
+  }
+  /* line 182, ../../../WebApp Dashboard/scss/components/_grid.scss */
+  .members,
+  .recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    border-right: solid 2px #a8a6a6;
+    padding-right: 20px;
+  }
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/components/_images.scss */
+.members img,
+.recent img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+/* line 6, ../../../WebApp Dashboard/scss/components/_images.scss */
+.heading img {
+  margin: auto 0.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* line 15, ../../../WebApp Dashboard/scss/components/_images.scss */
+.social-image {
+  height: 100px;
+  width: 100px;
+  background-color: #7477bf;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+/* line 1, ../../../WebApp Dashboard/scss/components/_nav.scss */
+.notifications {
+  display: none;
+}
+
+/* line 5, ../../../WebApp Dashboard/scss/components/_nav.scss */
+.nav {
+  height: 70px;
+  background-color: #363b64;
+  text-align: center;
+}
+
+/* line 10, ../../../WebApp Dashboard/scss/components/_nav.scss */
+.nav-svg {
+  margin: 15px 7%;
+}
+
+/* ?=============== alert=========== */
+/* line 15, ../../../WebApp Dashboard/scss/components/_nav.scss */
+.alert-banner {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7477bf;
+  margin: 0 10px;
+  padding: 0 20px;
+  border-radius: 5px 5px;
+}
+
+/* line 24, ../../../WebApp Dashboard/scss/components/_nav.scss */
+.alert-banner-close:hover {
+  color: #da4747;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

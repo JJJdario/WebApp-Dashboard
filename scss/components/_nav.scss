@@ -1,0 +1,27 @@
+.notifications {
+  display: none;
+}
+
+.nav {
+  height: 70px;
+  background-color: #363b64;
+  text-align: center;
+}
+.nav-svg {
+  margin: 15px 7%;
+}
+/* ?=============== alert=========== */
+
+.alert-banner {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7477bf;
+  margin: 0 10px;
+  padding: 0 20px;
+  border-radius: 5px 5px;
+}
+.alert-banner-close:hover {
+  color: #da4747;
+  cursor: pointer;
+}

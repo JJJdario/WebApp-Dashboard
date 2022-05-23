@@ -1,0 +1,67 @@
+h1,
+header h3 {
+  color: white;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: auto;
+}
+h2 {
+  margin-left: 0.3rem;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  color: rgb(80, 79, 79);
+}
+
+.heading {
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #7477bf;
+}
+.heading h1 {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+.heading h3 {
+  margin-right: 20px;
+  margin-left: 0;
+  font-size: 0.7rem;
+}
+
+// /* ================ social ================ */
+.social-text {
+  text-align: left;
+  margin: auto 0;
+}
+.data {
+  font-size: 50px;
+  margin: 0 10px 0 0;
+}
+.social-heading {
+  color: #7477bf;
+  font-size: 2em;
+  margin: 0;
+}
+.social-grid h3,
+.members h3,
+.recent h3,
+form h3,
+.settings h3 {
+  color: black;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 27px;
+  letter-spacing: 1.5px;
+}
+.members p,
+.recent p {
+  margin: 0;
+}
+
+.message h3 {
+  margin-left: 27px;
+}

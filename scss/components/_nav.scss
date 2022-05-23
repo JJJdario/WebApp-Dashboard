@@ -3,7 +3,6 @@
 }
 
 .nav {
-  height: 70px;
   background-color: #363b64;
   text-align: center;
 }
@@ -24,4 +23,34 @@
 .alert-banner-close:hover {
   color: #da4747;
   cursor: pointer;
+}
+/* =========== line chart links ============= */
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 10px 5vw;
+}
+li {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+ul a:first-child:hover {
+  border-radius: 33%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 100%;
+    max-width: 70px;
+  }
+  ul {
+    justify-content: flex-end;
+  }
 }

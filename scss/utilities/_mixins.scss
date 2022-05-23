@@ -1,0 +1,11 @@
+@mixin d-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 1;
+}
+@mixin d-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}

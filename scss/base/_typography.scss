@@ -65,3 +65,21 @@ form h3,
 .message h3 {
   margin-left: 27px;
 }
+
+@media screen and (min-width: 768px) {
+  .data {
+    font-size: 1.6em;
+  }
+  .social-heading {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .data {
+    font-size: 3em;
+  }
+  .social-heading {
+    font-size: 2em;
+  }
+}

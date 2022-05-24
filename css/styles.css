@@ -583,7 +583,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 1;
     justify-content: flex-start;
   }
   /* line 138, ../../../WebApp Dashboard/scss/components/_grid.scss */
@@ -629,7 +628,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 1;
     border-right: solid 2px #a8a6a6;
     padding-right: 20px;
   }

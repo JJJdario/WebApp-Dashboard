@@ -755,24 +755,31 @@ li {
   list-style-type: none;
 }
 
-/* line 39, ../../../WebApp Dashboard/scss/components/_nav.scss */
+/* line 38, ../../../WebApp Dashboard/scss/components/_nav.scss */
+ul a:hover {
+  background-color: seagreen;
+  color: white;
+  transition: background-color 0.4s ease-in;
+}
+
+/* line 44, ../../../WebApp Dashboard/scss/components/_nav.scss */
 ul a {
   text-decoration: none;
   padding: 10px 15px;
 }
 
-/* line 44, ../../../WebApp Dashboard/scss/components/_nav.scss */
+/* line 49, ../../../WebApp Dashboard/scss/components/_nav.scss */
 ul a:first-child:hover {
-  border-radius: 33%;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 49, ../../../WebApp Dashboard/scss/components/_nav.scss */
+  /* line 54, ../../../WebApp Dashboard/scss/components/_nav.scss */
   .nav {
     height: 100%;
     max-width: 70px;
   }
-  /* line 53, ../../../WebApp Dashboard/scss/components/_nav.scss */
+  /* line 58, ../../../WebApp Dashboard/scss/components/_nav.scss */
   ul {
     justify-content: flex-end;
   }

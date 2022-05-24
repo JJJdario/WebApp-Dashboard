@@ -6,8 +6,8 @@
 .heading img {
   margin: auto 0.5rem;
   border-radius: 50%;
-  width: 3rem;
-  height: 3em;
+  width: 2rem;
+  height: 2rem;
   margin-left: 20px;
 }
 
@@ -51,4 +51,10 @@
 .tw-logo,
 .inst-logo {
   fill: white;
+}
+@media screen and(min-width: 678px) {
+  .heading img {
+    width: 3rem;
+    height: 3rem;
+  }
 }

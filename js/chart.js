@@ -58,7 +58,7 @@ let myChart = new Chart(trafficChart, {
     ],
   },
   options: {
-    aspectRatio: 2.5,
+    aspectRatio: 1.2,
     animation: {
       duration: 0,
     },

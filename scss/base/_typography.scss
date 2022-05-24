@@ -5,6 +5,9 @@ header h3 {
   font-weight: 400;
   margin: auto;
 }
+p {
+  color: black;
+}
 h2 {
   margin-left: 0.3rem;
   font-family: "PT Sans";
@@ -24,9 +27,9 @@ h2 {
 }
 
 .heading h3 {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 0;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 // /* ================ social ================ */
@@ -59,12 +62,33 @@ form h3,
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+.recent p {
+  width: 60%;
+  margin-left: 20%;
+}
+.settings p {
+  font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .data {
     font-size: 1.6em;
   }
+  .heading h3 {
+    font-size: 1rem;
+  }
   .social-heading {
     font-size: 1em;
+  }
+  .recent p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .settings p {
+    font-size: 20px;
   }
 }
 

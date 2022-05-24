@@ -69,6 +69,11 @@ header h3 {
 }
 
 /* line 8, ../../../WebApp Dashboard/scss/base/_typography.scss */
+p {
+  color: black;
+}
+
+/* line 11, ../../../WebApp Dashboard/scss/base/_typography.scss */
 h2 {
   margin-left: 0.3rem;
   font-family: "PT Sans";
@@ -78,45 +83,45 @@ h2 {
   color: #504f4f;
 }
 
-/* line 16, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 19, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .dashboard h2 {
   font-size: 1.8rem;
 }
 
-/* line 20, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 23, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .heading h1 {
   margin-left: 10px;
   margin-right: 20px;
   font-size: 1.3rem;
 }
 
-/* line 26, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 29, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .heading h3 {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-left: 0;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
-/* line 33, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 36, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .social-text {
   text-align: left;
   margin: auto 0;
 }
 
-/* line 37, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 40, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .data {
   font-size: 50px;
   margin: 0 10px 0 0;
 }
 
-/* line 41, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 44, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .social-heading {
   color: #7477bf;
   font-size: 2em;
   margin: 0;
 }
 
-/* line 46, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 49, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .social-grid h3,
 .members h3,
 .recent h3,
@@ -129,29 +134,58 @@ form h3,
   letter-spacing: 1.5px;
 }
 
-/* line 57, ../../../WebApp Dashboard/scss/base/_typography.scss */
+/* line 60, ../../../WebApp Dashboard/scss/base/_typography.scss */
 .members p,
 .recent p {
   margin: 0;
 }
 
+/* line 65, ../../../WebApp Dashboard/scss/base/_typography.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 68, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.recent p {
+  width: 60%;
+  margin-left: 20%;
+}
+
+/* line 72, ../../../WebApp Dashboard/scss/base/_typography.scss */
+.settings p {
+  font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 63, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  /* line 77, ../../../WebApp Dashboard/scss/base/_typography.scss */
   .data {
     font-size: 1.6em;
   }
-  /* line 66, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  /* line 80, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  .heading h3 {
+    font-size: 1rem;
+  }
+  /* line 83, ../../../WebApp Dashboard/scss/base/_typography.scss */
   .social-heading {
     font-size: 1em;
+  }
+  /* line 86, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  .recent p {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* line 90, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  .settings p {
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 72, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  /* line 96, ../../../WebApp Dashboard/scss/base/_typography.scss */
   .data {
     font-size: 3em;
   }
-  /* line 75, ../../../WebApp Dashboard/scss/base/_typography.scss */
+  /* line 99, ../../../WebApp Dashboard/scss/base/_typography.scss */
   .social-heading {
     font-size: 2em;
   }
@@ -207,20 +241,20 @@ button {
   cursor: pointer;
   background-color: #625c5c;
   transition: 0.4s;
-  width: 140px;
-  height: 50px;
+  width: 80px;
+  height: 30px;
 }
 
 /* line 49, ../../../WebApp Dashboard/scss/components/_buttons.scss */
 .slider:before {
   content: "";
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-color: #fff;
   transition: 0.4s;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 6px;
 }
 
 /* line 60, ../../../WebApp Dashboard/scss/components/_buttons.scss */
@@ -231,7 +265,7 @@ input:checked + .slider {
 
 /* line 65, ../../../WebApp Dashboard/scss/components/_buttons.scss */
 input:checked + .slider:before {
-  transform: translateX(89px);
+  transform: translateX(49px);
 }
 
 /* line 69, ../../../WebApp Dashboard/scss/components/_buttons.scss */
@@ -248,7 +282,7 @@ input:checked + .slider:before {
 .btn-toggle {
   font-size: 20px;
   height: 70px;
-  margin: 20px 30px;
+  margin: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -260,9 +294,9 @@ input:checked + .slider:before {
   color: white;
   z-index: 1;
   position: absolute;
-  bottom: 8px;
-  left: 14px;
-  font-size: 30px;
+  bottom: 2px;
+  left: 8px;
+  font-size: 20px;
 }
 
 /* line 94, ../../../WebApp Dashboard/scss/components/_buttons.scss */
@@ -270,16 +304,69 @@ input:checked + .slider:before {
 #off2 {
   color: #fff7f7;
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   z-index: 1;
-  right: 14px;
-  bottom: 8px;
+  right: 8px;
+  bottom: 2px;
 }
 
 @media screen and (min-width: 768px) {
   /* line 105, ../../../WebApp Dashboard/scss/components/_buttons.scss */
   .btn-toggle {
     width: 50%;
+    margin: 20px 30px;
+  }
+  /* line 109, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  .slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #625c5c;
+    transition: 0.4s;
+    width: 150px;
+    height: 50px;
+  }
+  /* line 119, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    transition: 0.4s;
+    top: 10px;
+    left: 10px;
+  }
+  /* line 129, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  #on,
+  #on2 {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 14px;
+    font-size: 30px;
+  }
+  /* line 138, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  #off,
+  #off2 {
+    color: #fff7f7;
+    position: absolute;
+    font-size: 30px;
+    z-index: 1;
+    right: 14px;
+    bottom: 8px;
+  }
+  /* line 147, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  input:checked + .slider:before {
+    transform: translateX(99px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 152, ../../../WebApp Dashboard/scss/components/_buttons.scss */
+  .btn-toggle {
+    width: 87%;
   }
 }
 
@@ -559,8 +646,8 @@ nav {
 .heading img {
   margin: auto 0.5rem;
   border-radius: 50%;
-  width: 3rem;
-  height: 3em;
+  width: 2rem;
+  height: 2rem;
   margin-left: 20px;
 }
 
@@ -612,6 +699,14 @@ nav {
   fill: white;
 }
 
+@media screen and (min-width: 678px) {
+  /* line 56, ../../../WebApp Dashboard/scss/components/_images.scss */
+  .heading img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 /* line 1, ../../../WebApp Dashboard/scss/components/_nav.scss */
 .notifications {
   display: none;
@@ -625,7 +720,7 @@ nav {
 
 /* line 9, ../../../WebApp Dashboard/scss/components/_nav.scss */
 .nav-svg {
-  margin: 15px 7%;
+  margin: 15px 6%;
 }
 
 /* ?=============== alert=========== */

@@ -13,13 +13,10 @@ h2 {
   letter-spacing: 1.5px;
   color: rgb(80, 79, 79);
 }
-
-.heading {
-  height: 4.3rem;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #7477bf;
+.dashboard h2 {
+  font-size: 1.8rem;
 }
+
 .heading h1 {
   margin-left: 10px;
   margin-right: 20px;
@@ -29,7 +26,7 @@ h2 {
 .heading h3 {
   margin-right: 20px;
   margin-left: 0;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 // /* ================ social ================ */
@@ -60,10 +57,6 @@ form h3,
 .members p,
 .recent p {
   margin: 0;
-}
-
-.message h3 {
-  margin-left: 27px;
 }
 
 @media screen and (min-width: 768px) {

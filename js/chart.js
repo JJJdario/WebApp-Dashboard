@@ -52,6 +52,7 @@ let myChart = new Chart(trafficChart, {
       {
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
         backgroundColor: ["rgba(116, 119, 191, 0.3)"],
+        borderWidth: 1,
         fill: true,
       },
     ],
@@ -87,6 +88,7 @@ const pie = new Chart(dailyTraffic, {
         label: "# of Hits",
         data: [75, 115, 175, 125, 225, 200, 100],
         backgroundColor: ["#7477BF"],
+        borderWidth: 1,
         borderWidth: 0,
         fill: true,
       },
@@ -115,6 +117,7 @@ let bar = new Chart(movileUser, {
         data: ["70", "15", "15"],
         borderWidth: 0,
         backgroundColor: ["#7477BF", "#78CF82", "#51B6C8"],
+        borderWidth: 1,
         fill: true,
       },
     ],
@@ -128,4 +131,25 @@ let bar = new Chart(movileUser, {
       },
     },
   },
+});
+
+// ===========toggle===========
+
+const toggle = document.querySelector(".toggle input");
+const toggle2 = document.querySelector(".toggle2 input");
+
+toggle.addEventListener("click", () => {
+  const onOff = toggle.parentNode.querySelector(".onoff");
+  onOff.textContent = toggle.checked
+    ? onOff.setAttribute("id", "on")
+    : onOff.setAttribute("id", "off");
+  onOff.textContent = toggle.checked ? "ON" : "OFF";
+});
+
+toggle2.addEventListener("click", () => {
+  const onOff2 = toggle2.parentNode.querySelector(".onoff2");
+  onOff2.textContent = toggle2.checked
+    ? onOff2.setAttribute("id", "on2")
+    : onOff2.setAttribute("id", "off2");
+  onOff2.textContent = toggle2.checked ? "ON" : "OFF";
 });

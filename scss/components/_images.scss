@@ -6,8 +6,9 @@
 .heading img {
   margin: auto 0.5rem;
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3em;
+  margin-left: 20px;
 }
 
 // /* ================ social ================ */
@@ -30,6 +31,11 @@
   margin-right: 0;
   padding-right: 0.7rem;
   border-right: solid 1px rgba(230, 227, 227, 0.461);
+}
+.bell:hover {
+  transform: scale(1.6) rotate(-360deg);
+  border-right-color: #7476bf00;
+  transition: 0.5s ease-in;
 }
 
 .nav-svg {

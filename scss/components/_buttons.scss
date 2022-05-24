@@ -103,7 +103,7 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 768px) {
   .btn-toggle {
-    width: 50%;
+    width: 60%;
     margin: 20px 30px;
   }
   .slider {
@@ -146,10 +146,5 @@ input:checked + .slider:before {
   }
   input:checked + .slider:before {
     transform: translateX(99px);
-  }
-}
-@media screen and (min-width: 1024px) {
-  .btn-toggle {
-    width: 87%;
   }
 }

@@ -313,7 +313,7 @@ input:checked + .slider:before {
 @media screen and (min-width: 768px) {
   /* line 105, ../../../WebApp Dashboard/scss/components/_buttons.scss */
   .btn-toggle {
-    width: 50%;
+    width: 60%;
     margin: 20px 30px;
   }
   /* line 109, ../../../WebApp Dashboard/scss/components/_buttons.scss */
@@ -360,13 +360,6 @@ input:checked + .slider:before {
   /* line 147, ../../../WebApp Dashboard/scss/components/_buttons.scss */
   input:checked + .slider:before {
     transform: translateX(99px);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* line 152, ../../../WebApp Dashboard/scss/components/_buttons.scss */
-  .btn-toggle {
-    width: 87%;
   }
 }
 
